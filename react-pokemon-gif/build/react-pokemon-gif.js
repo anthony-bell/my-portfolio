@@ -14,7 +14,7 @@ var _shallowCompare = require('react-addons-shallow-compare');
 
 var _shallowCompare2 = _interopRequireDefault(_shallowCompare);
 
-var _pokemonGif = require('pokemon-gif');
+var _pokemonGif = require('../../pokemon-gif');
 
 var _pokemonGif2 = _interopRequireDefault(_pokemonGif);
 
