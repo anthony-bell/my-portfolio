@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaUsb, FaLaptopCode } from 'react-icons/fa';
+import { FaUsb, FaLaptopCode, FaServer, FaStar } from 'react-icons/fa';
 import {Tabs , Tab} from "react-mdl";
 
 class AboutMe extends Component {
@@ -17,13 +17,13 @@ class AboutMe extends Component {
             )
         }else if (this.state.activeTab ===1){
             return(
-                <div>
-                <VerticalTimeline>
+
+                <VerticalTimeline className="aboutme-grid">
 
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2018 - present"
+                        date= "2018 - present"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<FaLaptopCode />}
                     >
@@ -36,7 +36,7 @@ class AboutMe extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="2016 - 2018"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        iconStyle={{ background: 'rgb(249, 158, 33)', color: '#fff' }}
                         icon={<FaUsb />}
                     >
                         <h3 className="vertical-timeline-element-title">Systems Administrator</h3>
@@ -50,7 +50,7 @@ class AboutMe extends Component {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="Summer 2017"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        iconStyle={{ background: 'rgb(33, 243, 243)', color: '#fff' }}
                         icon={<FaLaptopCode />}
                     >
                         <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
@@ -65,57 +65,22 @@ class AboutMe extends Component {
                         className="vertical-timeline-element--work"
                         date="2006 - 2008"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        // icon={<WorkIcon />}
+                        icon={<FaServer />}
                     >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                        <h3 className="vertical-timeline-element-title">Jr. Systems Administrator</h3>
+                        <h4 className="vertical-timeline-element-subtitle">UC Davis College of Engineering</h4>
                         <p>
-                            User Experience, Visual Design
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="April 2013"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                        <p>
-                            Strategy, Social Media
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="November 2012"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                        <p>
-                            Creative Direction, User Experience, Visual Design
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                        // icon={<SchoolIcon />}
-                    >
-                        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                        <p>
-                            Creative Direction, Visual Design
+                            Worked with a team in maintaining 60+ Linux computers for students, faculty, & professors.
+                            I was able to tutor, & offer IT support for professors, faculty, & students.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                        // icon={<StarIcon />}
+                        icon={<FaStar />}
                     />
 
                 </VerticalTimeline>
-                </div>
+
             )
         }
     }
@@ -127,7 +92,7 @@ class AboutMe extends Component {
                     <Tab>Experience</Tab>
                 </Tabs>
 
-                <section classname="aboutme-grid">
+                <section className="aboutme-grid">
                     {this.toggleCategories()}
                 </section>
             </div>
