@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import { SchoolIcon } from '@material-ui/icons/School';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { FaUsb, FaLaptopCode } from 'react-icons/fa';
 import {Tabs , Tab} from "react-mdl";
 
 class AboutMe extends Component {
@@ -23,38 +23,42 @@ class AboutMe extends Component {
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2011 - present"
+                        date="2018 - present"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        // icon={<WorkIcon />}
+                        icon={<FaLaptopCode />}
                     >
-                        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                        <h3 className="vertical-timeline-element-title">DevOps Engineer</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Nokia Software</h4>
                         <p>
                             Creative Direction, User Experience, Visual Design, Project Management, Team Leading
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2010 - 2011"
+                        date="2016 - 2018"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        // icon={<WorkIcon />}
+                        icon={<FaUsb />}
                     >
-                        <h3 className="vertical-timeline-element-title">Art Director</h3>
-                        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                        <h3 className="vertical-timeline-element-title">Systems Administrator</h3>
+                        <h4 className="vertical-timeline-element-subtitle">SJSU Charles W. Davidson College of Engineering</h4>
                         <p>
-                            Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                            Tested & deployed scalable, highly available & modular software products.
+                            Wrote scripts to enhance user experience & integrated scripts with Linux utilizing my command line skills.
+                            Utilized my verbal & writing communication skills by providing support for hardware & software related issues for clients & faculty.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        date="2008 - 2010"
+                        date="Summer 2017"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        // icon={<WorkIcon />}
+                        icon={<FaLaptopCode />}
                     >
-                        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                        <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+                        <h4 className="vertical-timeline-element-subtitle">Bluescape</h4>
                         <p>
-                            User Experience, Visual Design
+                            Wrote REST APIs with NodeJs & improved my design/implementation skills for queries/database schemas
+                            by analyzing/designing relational databases with Swagger & MongoDB/Mongoose. Enhanced my leadership skills by mentoring high school & undergraduate interns by familiarizing them with REST calls & APIs,
+                            as well as an introduction to NodeJs.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
