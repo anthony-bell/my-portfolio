@@ -17,7 +17,9 @@ class AboutMe extends Component {
     toggleCategories() {
         if(this.state.activeTab === 0){
             return(
+                <div className="category-tabs">
                 <Particles
+
                     params={{
                         "particles": {
                             "number": {
@@ -36,10 +38,11 @@ class AboutMe extends Component {
                             }
                         }
                     }} />
+                </div>
             )
         }else if (this.state.activeTab ===1){
             return(
-                <div style={{width: '100%', margin:'auto'}}>
+                <div  >
 
                     <Grid >
 
@@ -66,14 +69,13 @@ class AboutMe extends Component {
                                         }
                                     }
                                 }} />
-                            <VerticalTimeline >
+                            <VerticalTimeline>
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--work"
                                     date= "2018 - present"
                                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                     icon={<FaLaptopCode />}
                                 >
-
                                     <h3 className="vertical-timeline-element-title">DevOps Engineer</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Nokia Software</h4>
                                     <p>
