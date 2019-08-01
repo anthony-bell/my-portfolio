@@ -72,7 +72,8 @@ class AboutMe extends Component {
                             <VerticalTimeline>
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--work"
-                                    date= "2018 - present"
+                                    date="2018 - present"
+                                    style={{color: 'red'}}
                                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                     icon={<FaLaptopCode />}
                                 >
@@ -145,7 +146,7 @@ class AboutMe extends Component {
         return(
             <div className="category-tabs">
 
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+                <Tabs className="tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                     <Tab>Summary</Tab>
                     <Tab>Experience</Tab>
                 </Tabs>

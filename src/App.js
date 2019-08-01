@@ -4,6 +4,7 @@ import {Layout, Header, Navigation, Drawer, Content} from "react-mdl";
 import Main from './components/main';
 import {Link} from 'react-router-dom';
 
+
 class App extends Component {
   render() {
     return (
@@ -12,9 +13,7 @@ class App extends Component {
 
 
           <Layout>
-
             <Header className="header-color" title="Anthony Bell" scroll>
-
               <Navigation>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/resume">Resume</Link>
