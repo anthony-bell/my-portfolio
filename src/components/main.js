@@ -7,6 +7,7 @@ import Projects from "./projects";
 import AboutMe from "./aboutme";
 
 
+
 const Main = () => (
     <Switch>
         <Route exact path ="/" component={LandingPage} />

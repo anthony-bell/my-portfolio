@@ -49,6 +49,13 @@
   background: linear-gradient(to bottom, #414345, #414345);
 }
 
+.date-timeline p {
+
+  color: white;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-style: normal;
+  font-variant: normal;
+}
 .avatar-img {
   height:200px;
   padding-top: 5em;

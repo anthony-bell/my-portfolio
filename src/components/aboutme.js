@@ -19,7 +19,7 @@ class AboutMe extends Component {
             return(
                 <div className="category-tabs">
                 <Particles
-
+                    className="aboutme-grid"
                     params={{
                         "particles": {
                             "number": {
@@ -72,7 +72,7 @@ class AboutMe extends Component {
                             <VerticalTimeline>
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--work"
-                                    date="2018 - present"
+                                    date={<div className="date-timeline"><p style={{color: 'white'}}>2018 - present</p></div>}
                                     style={{color: 'red'}}
                                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                     icon={<FaLaptopCode />}
@@ -146,9 +146,9 @@ class AboutMe extends Component {
         return(
             <div className="category-tabs">
 
-                <Tabs className="tabs" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-                    <Tab>Summary</Tab>
-                    <Tab>Experience</Tab>
+                <Tabs className="tabs date-timeline" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+                    <Tab><p>Summary</p></Tab>
+                    <Tab><p>Experience</p></Tab>
                 </Tabs>
 
                 <section >
