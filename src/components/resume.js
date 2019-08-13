@@ -23,7 +23,7 @@ class Resume extends Component {
         const { pageNumber, numPages } = this.state;
 
         return(
-            <div >
+            <div>
             <Particles
                 className="resume-grid"
                 params={{
@@ -88,10 +88,11 @@ class Resume extends Component {
                         </Document>
 
                 </CardTitle>
-
+                <div style={{"text-align": "center"}}>
                 <CardActions border style={{height: '400px'}}>
                     <Button colored>Download</Button>
                 </CardActions>
+                </div>
             </Card>
             </div>
 
