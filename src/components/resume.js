@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Card, CardTitle, CardActions, CardText, Button} from 'react-mdl';
-import PDF from '../resumeAnthony.pdf';
+import PDF from '../resume_anthony.pdf';
 import {Particles} from 'react-particles-js'
 
 import { Document , Page, pdfjs } from 'react-pdf';
