@@ -1,8 +1,8 @@
 .header-color {
   background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /*background: -webkit-linear-gradient(to right, #414345, #232526);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #414345, #232526); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+  background: linear-gradient(to bottom, #414345, #414345);
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   font-size: 24px;
   font-style: normal;
@@ -20,8 +20,8 @@
 
 .landing-grid {
   background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: -webkit-linear-gradient(to right, #414345, #232526);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  background: linear-gradient(to bottom, #414345, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   text-align: center;
   position: fixed;
@@ -31,13 +31,38 @@
   height: 100%;
 }
 
+.aboutme-grid {
+  background: #232526;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #414345, #ff396e);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  background: linear-gradient(to bottom, #414345, #88f9f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  position: absolute;
+  top: 3.4em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.tabs {
+  background: linear-gradient(to bottom, #414345, #414345);
+}
+
+.date-timeline p {
+
+  color: white;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-style: normal;
+  font-variant: normal;
+}
 .avatar-img {
   height:200px;
   padding-top: 5em;
 }
 
 .banner-text {
-  background-color: black;
+  background-color: #489ac1;
   opacity: .5;
   width: 75%;
   margin: Auto;

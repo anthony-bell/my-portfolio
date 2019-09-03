@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {Grid, Cell} from 'react-mdl';
 import PokemonGif from 'react-pokemon-gif';
+import Particles from "react-particles-js";
+
 // import styles from '../Pokemon.css';
 
 class Landing extends Component {
@@ -15,23 +17,47 @@ class Landing extends Component {
     }
     render() {
         return(
+
             <div style={{width: '100%', margin:'auto'}}>
+
                 <Grid className="landing-grid">
+
                     <Cell col={12}>
 
+                        <Particles
+                            className="landing-grid"
+                            params={{
+                                "particles": {
+                                    "number": {
+                                        "value": 50
+                                    },
+                                    "size": {
+                                        "value": 3
+                                    }
+                                },
+                                "interactivity": {
+                                    "events": {
+                                        "onhover": {
+                                            "enable": true,
+                                            "mode": "repulse"
+                                        }
+                                    }
+                                }
+                            }} />
 
-                            <PokemonGif
-                                className="avatar-img"
-                                pokemon={this.state.text}
-                                height={100}
-                            />
                             <div className="namer">
+                                <PokemonGif
+                                    className="avatar-img"
+                                    pokemon={this.state.text}
+                                    height={100}
+                                />
                                 <div className="namer-input">
                                     <input type="text" className="namername" placeholder="Who's your favorite Pokemon?" onChange={this.handleChange}/>
                                 </div>
                             </div>
 
                         <div className="banner-text">
+
                             <h1>DevOps Engineer </h1>
 
                             <hr/>
